@@ -1,0 +1,81 @@
+:root{
+
+    /*Colors*/
+    --primary-color: #404258; 
+    --third-color:#ececec;
+}
+
+header{
+    font-size: 2rem;
+    height: 100vh;
+    width: 8vw;
+    background-color: var(--primary-color);
+}
+
+header section{
+    height: 20%;
+}
+
+header nav{
+    height: 60%;
+}
+
+nav ul li{
+    padding: 1rem;
+}
+
+.account ul li{
+    padding: 0.2rem;
+}
+
+main{
+    width: 92vw;
+    font-size: 1rem;
+    background-color: var(--third-color);
+}
+
+.card-QA{
+    width: 60%;
+    height: 40%;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.card-header{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    height: 30%;
+}
+
+.user-info{
+    width: 95%;
+}
+
+.card-body{
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    width: 100%;
+    height: 70%;
+}
+
+.question{
+    width: 95%;
+    height: 70%;
+    text-align: justify;
+}
+
+.tags{
+    width: 95%;
+}
+
+.tag{
+    padding: 0 1rem;
+}
+
+
+
+
+
