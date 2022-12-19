@@ -7,86 +7,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/general.css">
 </head>
 
 <body>
-    <!--Cabeçalho-->
-    <header class="flex col space-evenly">
-        <section class="logo header-child flex j-center a-center">
-            <a href="">
-                <ion-icon name="logo-apple-ar"></ion-icon>
-            </a>
-        </section>
-
-        <nav class="navbar header-child flex j-center a-center">
-            <ul class="nav-list flex col flex j-center a-center">
-                <li>
-                    <a href="" class="list-link">
-                        <ion-icon name="home-outline"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="" class="list-link">
-                        <ion-icon name="arrow-undo-circle-outline"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="" class="list-link">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="" class="list-link">
-                        <ion-icon name="add-circle-outline"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="" class="list-link">
-                        <ion-icon name="notifications-outline"></ion-icon>
-                    </a>
-                </li>
+    <header class="header-container">
+        <nav class="header-nav">
+            <ul class="header-list flex space-evenly align-center">
+                <li class="profile-pic-area"><a class="header-link" href="#">
+                    <img src="assets/img/profile.jpg" alt="Foto de perfil" id="profile-pic">
+                </a></li>
+                <li><a class="header-link" href="#start"><h2 class="logo">Post.me</h2></a></li>
+                <li><a class="header-link" href="#"><ion-icon name="notifications-outline" id="notification-icon"></ion-icon></a></li>
             </ul>
         </nav>
-
-        <section class="account header-child flex j-center a-center">
-            <ul>
-                <li>
-                    <a href="">
-                        <ion-icon name="person-circle-outline"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        <ion-icon name="menu-outline"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-
-        </section>
-
     </header>
 
-    <!--Corpo-->
-    <main class="flex a-center space-around ">
-        <section class="posts-container main-container">
-            <section class="text-main-container">
-                There is the space to see all posts
+    <main class="main-container flex align-center col">
+
+        <section class="create-post-conteiner flex justify-center" id="start">
+            <section class="create-post-area flex align-center space-between">
+                <input type="text" id="create-post" placeholder="Escreva a sua dúvida">
+
+                <a href="#" class="flex align-center">
+                    <ion-icon name="add-circle-outline" id="post-icon"></ion-icon>
+                </a>
             </section>
-        </section> 
-        
-        <section class="profile-container flex col space-between">
-            <section class="profile-card">
-                This is a card space
+        </section>
+
+        <section class="posts-area flex col align-center">
+            <section class="post-card flex col align-center">
+                <section class="post-header flex align-center space-evenly">
+                    <section class="profile-pic-area">
+                        <img src="assets/img/profile.jpg" alt="Foto de perfil" id="profile-pic">
+                    </section>
+
+                    <a href="#" id="username">H3lc1ooS</a>
+                    <p class="time">19/12/2022</p>
+                </section>
+
+                <section class="post-body">
+                    <p id="ask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nam animi esse, enim
+                        earum est quis explicabo dolorum modi temporibus repudiandae vel? Nostrum quas placeat illum.
+                        Nobis iure laudantium debitis?</p>
+                </section>
+
+                <section class="post-footer flex space-between">
+                    <section class="post-tags-area flex space-evenly">
+                        <label for="">#</label>
+                        <ul class="post-tags flex space-evenly">
+                            <li class="post-tag"><a href="#" id="tag">Math</a></li>
+                            <li class="post-tag"><a href="#" id="tag">Portuguese</a></li>
+                        </ul>
+                    </section>
+                    <a href="#" class="comment"><ion-icon name="chatbubble-outline" id="comment-icon"></ion-icon></a>
+                </section>
+            </section>
+
+            <section class="post-card flex col align-center">
+                <section class="post-header flex align-center space-evenly">
+                    <section class="profile-pic-area">
+                        <img src="assets/img/profile.jpg" alt="Foto de perfil" id="profile-pic">
+                    </section>
+
+                    <a href="#" id="username">H3lc1ooS</a>
+                    <p class="time">19/12/2022</p>
+                </section>
+
+                <section class="post-body">
+                    <p id="ask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nam animi esse, enim
+                        earum est quis explicabo dolorum modi temporibus repudiandae vel? Nostrum quas placeat illum.
+                        Nobis iure laudantium debitis?</p>
+                </section>
+
+                <section class="post-footer flex space-between">
+                    <section class="post-tags-area flex space-evenly">
+                        <label for="">#</label>
+                        <ul class="post-tags flex space-evenly">
+                            <li class="post-tag"><a href="#" id="tag">Math</a></li>
+                            <li class="post-tag"><a href="#" id="tag">Portuguese</a></li>
+                        </ul>
+                    </section>
+                    <a href="#" class="comment"><ion-icon name="chatbubble-outline" id="comment-icon"></ion-icon></a>
+                </section>
+            </section>
+
+            <section class="post-card flex col align-center">
+                <section class="post-header flex align-center space-evenly">
+                    <section class="profile-pic-area">
+                        <img src="assets/img/profile.jpg" alt="Foto de perfil" id="profile-pic">
+                    </section>
+
+                    <a href="#" id="username">H3lc1ooS</a>
+                    <p class="time">19/12/2022</p>
+                </section>
+
+                <section class="post-body">
+                    <p id="ask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nam animi esse, enim
+                        earum est quis explicabo dolorum modi temporibus repudiandae vel? Nostrum quas placeat illum.
+                        Nobis iure laudantium debitis?</p>
+                </section>
+
+                <section class="post-footer flex space-between">
+                    <section class="post-tags-area flex space-evenly">
+                        <label for="">#</label>
+                        <ul class="post-tags flex space-evenly">
+                            <li class="post-tag"><a href="#" id="tag">Math</a></li>
+                            <li class="post-tag"><a href="#" id="tag">Portuguese</a></li>
+                        </ul>
+                    </section>
+                    <a href="#" class="comment"><ion-icon name="chatbubble-outline" id="comment-icon"></ion-icon></a>
+                </section>
+            </section>
+
+            <section class="post-card flex col align-center">
+                <section class="post-header flex align-center space-evenly">
+                    <section class="profile-pic-area">
+                        <img src="assets/img/profile.jpg" alt="Foto de perfil" id="profile-pic">
+                    </section>
+
+                    <a href="#" id="username">H3lc1ooS</a>
+                    <p class="time">19/12/2022</p>
+                </section>
+
+                <section class="post-body">
+                    <p id="ask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nam animi esse, enim
+                        earum est quis explicabo dolorum modi temporibus repudiandae vel?</p>
+                </section>
+
+                <section class="post-footer flex space-between">
+                    <section class="post-tags-area flex space-evenly">
+                        <label for="">#</label>
+                        <ul class="post-tags flex space-evenly">
+                            <li class="post-tag"><a href="#" id="tag">Math</a></li>
+                            <li class="post-tag"><a href="#" id="tag">Portuguese</a></li>
+                        </ul>
+                    </section>
+                    <a href="#" class="comment"><ion-icon name="chatbubble-outline" id="comment-icon"></ion-icon></a>
+                </section>
             </section>
         </section>
     </main>
+
+    <footer class="footer-container">
+        <nav class="footer-nav">
+            <ul class="footer-list flex space-evenly align-center">
+                <li><a class="footer-link" href="#start"><ion-icon name="home-outline" class="footer-icons"></ion-icon></a></li>
+                <li><a class="footer-link" href="#"><ion-icon name="search-outline" class="footer-icons"></ion-icon></a></li>
+                <li><a class="footer-link footer-icons" href="#">#</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
 
     <script src="/assets/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

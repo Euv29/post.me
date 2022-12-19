@@ -1,78 +1,105 @@
-:root{
+@charset "UTF-8";
 
-    /*Colors*/
-    --primary-color: #404258; 
-    --second-color: #fff;
-    --third-color:#ececec;
+/*Header*/
+.header-container{
+    background-color: red;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
 }
 
-header{
-    font-size: 2rem;
-    height: 100vh;
-    width: 8vw;
-    background-color: var(--primary-color);
+.header-nav, .header-list{
+    width:100%;
+    height:100%;
 }
 
-header section{
-    height: 20%;
-}
-
-header nav{
-    height: 60%;
-}
-
-nav ul li{
-    padding: 1rem;
-}
-
-.account ul li{
-    padding: 0.2rem;
-}
-
-main{
-    width: 92vw;
-    font-size: 1rem;
-    background-color: var(--third-color);
-}
-
-.card-QA{
-    width: 60%;
-    height: 40%;
-    border-radius: 2rem;
-    background-color: white;
-}
-
-.card-header{
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    background-color: var(--primary-color);
-    color: white;
-    width: 100%;
-    height: 30%;
-}
-
+/*Main*/
 .main-container{
-    background-color: var(--second-color);
+    margin: 10vh 0;
 }
 
-.posts-container{
-    width: 60%;
-    height: 95%;
-    border-radius: 1rem;
-}
-
-.text-main-container{
-    margin: 2rem;
-}
-
-.profile-container{
-    width: 30%;
-    height: 95%;
-    border-radius: 1rem;
-}
-
-.profile-card{
-    height: 60%;
-    background-color: white;
+/*Create Post*/
+.create-post-conteiner{
     border-radius: 2rem;
+    border: thin solid;
+    margin: 2rem 0 1rem 0;
+    height: 2rem;
+    width: 80%;
 }
+.create-post-area{
+    width: 95%;
+}
+
+#create-post{
+    width: 90%;
+    height: 80%;
+    outline: none;
+    border:none;
+    
+}
+
+/*Posts*/
+.post-card{
+    width: 80%;
+    border: thin solid;
+    border-radius: 2rem;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+/*Post header*/
+.post-header{
+    width: 100%;
+    height: 8vh;
+}
+
+/*Profile*/
+.profile-pic-area{
+    border-radius: 50%;
+    height: 5vh;
+    width: 10vw;
+    border: thin solid black;
+    overflow: hidden;
+}
+
+#profile-pic{
+    width: 100%;
+}
+
+/*Post body*/
+.post-body{
+    text-align: justify;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 0.5rem;
+}
+/*Post footer*/
+.post-footer{
+    width: 80%;
+    margin-bottom: 0.6rem;
+}
+
+.post-tags-area{
+    width: 60%;
+}
+
+.post-tags{
+    width: 100%;
+}
+
+/*Footer*/
+.footer-container{
+    background-color: red;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+
+.footer-nav, .footer-list{
+    width:100%;
+    height:100%;
+} 
